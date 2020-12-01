@@ -11,8 +11,7 @@ p2 = Person()
 
 print(id(p1), id(p2))           # 52094480 52094096
 print(p1.name, p2.name)         # Peter Peter
-print(id(p1.name), id(p2.name))
-# 27980928 27980928 - the same object is called
+print(id(p1.name), id(p2.name)) # 27980928 27980928 - the same object is called
 
 print(p1.__dict__, p2.__dict__)  # {} {}
 
