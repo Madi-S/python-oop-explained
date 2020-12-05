@@ -25,4 +25,4 @@ print(id(t1.sayHello) == id(t2.sayHello))
 print(id(t1.sayBye) == id(t2.sayBye))
 
 print(type(t1.sayBye))
-# Also, note that `@staticmethod` is a funciton - <class 'function'>
+# Also, note that `@staticmethod` is a function  - <class 'function'>
