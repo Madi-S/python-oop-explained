@@ -31,7 +31,7 @@ class BankAccount:
             print(
                 f'{WHITE}Error occured. Amount: {amount} > Balance: {self.__balance}')
 
-    def showHistory(self):
+    def show_history(self):
         for sign, amount, date in self.__history:
             colour = GREEN if sign == '+' else RED
             print(f'{colour}{sign}{amount} {WHITE}on {date.astimezone()}')
@@ -46,4 +46,20 @@ my_acc.deposit(2000)
 my_acc.withdraw(150)
 my_acc.deposit(3000)
 my_acc.withdraw(3500)
-my_acc.showHistory()
+my_acc.show_history()
+
+my_acc.__balance = 10000
+
+print(my_acc.__dict__)
+
+'''
+
+{'name': 'John', '_BankAccount__balance': 3786, 
+'_BankAccount__history': 
+[('+', 2000, datetime.datetime(2020, 12, 6, 8, 8, 29, 880939, tzinfo=<UTC>)),
+('-', 150, datetime.datetime(2020, 12, 6, 8, 8, 29, 880939, tzinfo=<UTC>)), 
+('+', 3000, datetime.datetime(2020, 12, 6, 8, 8, 29, 881939, tzinfo=<UTC>)), 
+('-', 3500, datetime.datetime(2020, 12, 6, 8, 8, 29, 881939, tzinfo=<UTC>))],
+'__balance': 10000}
+
+'''
