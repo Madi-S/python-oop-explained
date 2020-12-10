@@ -116,4 +116,3 @@ a = AnotherGame()
 
 print(a.dice)
 print(a.flip)
-
