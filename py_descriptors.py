@@ -108,9 +108,6 @@ class AnotherGame:
     flip = Choice('Heads', 'Tails')
     rps = Choice('Rock', 'Paper', 'Scissors')
 
-    def __get__(self, obj, owner):
-        print('Here!', obj, owner)
-
 
 a = AnotherGame()
 
