@@ -1,5 +1,5 @@
-import ctypes
 import sys
+import ctypes
 from time import time_ns
 
 

@@ -119,4 +119,3 @@ class Student(Person):
 
 s = Student('Peter')
 s.greet()           # Hello from Peter (Person instance goes to greet's self)
-

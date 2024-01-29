@@ -27,5 +27,3 @@ class Student2():
 
 s2 = Student('Carl')
 s2.displayName()
-
-

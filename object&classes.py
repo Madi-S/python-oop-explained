@@ -1,5 +1,3 @@
-
-
 # class `ClassName`
 
 class Car:

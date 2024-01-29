@@ -31,4 +31,3 @@ print(s.name)       # John
 
 s = Student.from_file('name.txt')
 print(s.name)       # Nick
-
